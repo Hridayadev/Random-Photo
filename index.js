@@ -5,11 +5,14 @@ let i = 0;
 
 btn.addEventListener("click", () => {
     image.src = `https://picsum.photos/300?random=${i}`;
+    var hello = image.src;
     i++;
 });
+
 image.addEventListener("click", () => {
     image.classList.toggle("full-size");
 });
+
 downloadLink.addEventListener("click", () => {
-    downloadLink.href = image.src;
+    downloadLink.href = hello;
 });
